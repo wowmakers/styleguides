@@ -28,3 +28,23 @@
     'Don\'t use single quotes here' # bad
     "Don't use single quotes here"  # good
     ```
+
+### Conditions
+
+* Never use unless-else conditions. Replace it with if-else.
+
+    ```ruby
+    # Bad
+    unless some_condition?
+      X
+    else
+      Y
+    end
+    
+    # Good
+    if not some_condition?
+      Y
+    else
+      X
+    end
+    ```
