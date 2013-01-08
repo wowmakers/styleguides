@@ -1,5 +1,6 @@
-
 ## Ruby on Rails Coding Style Guides
+
+`Work in progress.`
 
 ### Basic stuff
 
