@@ -22,3 +22,9 @@
     "foo{ bar }" # bad
     "foo{bar}"   # good
     ```
+* Use double quotes if the string contains single quotes.
+
+    ```ruby
+    'Don\'t use single quotes here' # bad
+    "Don't use single quotes here"  # good
+    ```
