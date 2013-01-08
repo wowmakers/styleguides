@@ -31,6 +31,23 @@
 
 ### Conditions
 
+* Leave blank lines between if blocks.
+
+    ```ruby
+    # Bad
+    if some_condition?
+      do_something
+    if some_other_condition?
+      do_something_else
+    
+    # Good
+    if some_condition?
+      do_something
+    
+    if some_other_condition?
+      do_something_else
+    ```
+
 * Never use unless-else conditions. Replace it with if-else.
 
     ```ruby
