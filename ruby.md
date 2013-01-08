@@ -35,16 +35,16 @@
 
     ```ruby
     # Bad
-    unless some_condition?
-      X
+    unless success?
+      puts 'failure'
     else
-      Y
+      puts 'success'
     end
     
     # Good
-    if not some_condition?
-      Y
+    if success?
+      puts 'success'
     else
-      X
+      puts 'failure'
     end
     ```
