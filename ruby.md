@@ -1,7 +1,7 @@
 ## Ruby Style Guide
 
 
-### Basics
+### Basic formatting
 
 * Use 2 space indentation (no hard tabs)
 * No trailing whitespace
