@@ -1,6 +1,5 @@
 ## Ruby Style Guide
 
-
 ### Basic formatting
 
 * Use 2 space indentation (no hard tabs)
@@ -47,7 +46,7 @@
     if some_other_condition?
       do_something_else
     ```
-
+* Use `unless condition?` instead of `if !condition?`.
 * Never use unless-else conditions. Replace it with if-else.
 
     ```ruby
