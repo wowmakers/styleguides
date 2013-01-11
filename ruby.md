@@ -29,11 +29,21 @@ Borrowed heavily from the [Github Ruby Styleguide](github.com/styleguide/ruby).
     'Don\'t use single quotes here' # bad
     "Don't use single quotes here"  # good
     ```
+
+### Arrays and hashes
+
+* Use Ruby 1.9 hash syntax.
+
+    ```ruby
+    numbers = { 'one' => 1, 'two' => 2, 'three' => 3 }     # bad
+    numbers = { one: 1, two: 2, three: 3 }                 # good
+    ```
+
 * Use literal array syntax for arrays of strings.
 
     ```ruby
-    VALID_STATUSES = ['new', 'approved', 'rejected'] # bad
-    VALID_STATUSES = %w(new approved rejected)       # good
+    STATES = ['new', 'approved', 'rejected'] # bad
+    STATES = %w(new approved rejected)       # good
     ```
 
 ### Conditions
