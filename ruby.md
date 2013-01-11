@@ -1,5 +1,7 @@
 ## Ruby Style Guide
 
+Borrowed heavily from the [Github Ruby Styleguide](github.com/styleguide/ruby).
+
 ### Basic formatting
 
 * Use 2 space indentation (no hard tabs)
@@ -63,4 +65,18 @@
     else
       puts 'failure'
     end
+    ```
+
+### Blocks
+
+* Use `{ ... }` blocks instead of single line `do ... end` blocks.
+
+    ```ruby
+    # Bad
+    manipulate! do |img|
+      img.auto_orient!
+    end
+
+    # Good
+    manipulate! { |img| img.auto_orient! }
     ```
