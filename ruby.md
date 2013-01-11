@@ -29,6 +29,12 @@ Borrowed heavily from the [Github Ruby Styleguide](github.com/styleguide/ruby).
     'Don\'t use single quotes here' # bad
     "Don't use single quotes here"  # good
     ```
+* Use literal array syntax for arrays of strings.
+
+    ```ruby
+    VALID_STATUSES = ['new', 'approved', 'rejected'] # bad
+    VALID_STATUSES = %w(new approved rejected)       # good
+    ```
 
 ### Conditions
 
