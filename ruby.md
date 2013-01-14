@@ -96,3 +96,25 @@ Borrowed heavily from the [Github Ruby Styleguide](github.com/styleguide/ruby).
     # Good
     manipulate! { |img| img.auto_orient! }
     ```
+
+### Methods
+
+* Use parentheses around arguments in method definition.
+
+    ```ruby
+    def foo bar   # bad
+    def foo(bar)  # good
+    ```
+* Don't use parentheses when there are no arguments.
+
+    ```ruby
+    def foo()   # bad
+    def foo     # good
+    ```
+
+* Always use parentheses in method calls when there is a condition after it.
+
+    ```ruby
+    foo(bar) if baz?  # good
+    foo bar if baz?   # bad
+    ```
